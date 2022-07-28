@@ -41,7 +41,7 @@ public class PaymentController {
         Payment payment = paymentService.queryPaymentById(id);
         log.info("查询结果是=======" + payment + "addition");
         if(payment != null){
-            return new CommonResult(200,"github-查询成功,端口号是" + serverPort,payment);
+            return new CommonResult(200,"github-online-查询成功,端口号是" + serverPort,payment);
         }else {
             return new CommonResult(444,"master-查询失败-git-test-hot-fix", null);
         }
