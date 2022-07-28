@@ -43,7 +43,7 @@ public class PaymentController {
         if(payment != null){
             return new CommonResult(200,"查询成功,端口号是" + serverPort,payment);
         }else {
-            return new CommonResult(444,"查询失败", null);
+            return new CommonResult(444,"查询失败-git-test", null);
         }
     }
     @GetMapping("/payment/discovery")
